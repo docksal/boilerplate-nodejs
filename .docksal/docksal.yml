@@ -1,0 +1,19 @@
+version: "2.1"
+
+services:
+  cli:
+    # Start from the stock cli container configuration
+    extends:
+      file: ${HOME}/.docksal/stacks/services.yml
+      service: cli
+    # Extend the stock cli image (see .docksal/services/cli/Dockerfile)
+    image: ${COMPOSE_PROJECT_NAME_SAFE}/cli
+    build: services/cli
+    # Necessary overrides to route HTTP requests to cli via vhost-proxy
+    labels:
+      - io.docksal.project-root=${PROJECT_ROOT}
+      - io.docksal.virtual-host=${VIRTUAL_HOST},*.${VIRTUAL_HOST}
+      - io.docksal.virtual-port=3000
+    # Custom command to run when the container starts
+    # Using nodemon for live reload
+    command: ["nodemon", "index.js"]
