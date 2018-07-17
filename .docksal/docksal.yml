@@ -6,5 +6,6 @@ services:
     image: ${COMPOSE_PROJECT_NAME_SAFE}/cli
     build: services/cli
     # Custom command to run when the container starts
+    # Always use "bash -lc 'command'" to initialize the docker user environment
     # Using nodemon for live reload
-    command: ["nodemon", "index.js"]
+    command: ["bash", "-lc", "nodemon index.js"]
