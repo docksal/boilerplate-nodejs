@@ -6,8 +6,11 @@ USER docker
 
 # Install additional global npm dependencies
 RUN set -e; \
-	# Initialize user environment (this loads nvm)
+	# Initialize the user environment (this loads nvm)
 	. $HOME/.profile; \
+	# Install the necessary nodejs version
+	nvm install 10.12.0; \
+	nvm alias default 10.12.0; \
 	# Install packages
 	npm install -g nodemon;
 
