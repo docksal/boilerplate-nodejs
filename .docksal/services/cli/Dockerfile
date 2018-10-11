@@ -1,5 +1,5 @@
 # Use a stock Docksal image as the base
-FROM docksal/cli:2.3-php7.1
+FROM docksal/cli:2.5-php7.1
 
 # nvm/node/npm are only available in the docker user context
 USER docker
