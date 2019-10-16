@@ -5,7 +5,7 @@ A basic "Hello world" NodeJS app example.
 ## Features
 
 - Uses and extends from Docksal's NodeJS stack (`DOCKSAL_STACK=node`)
-- Example of stock `docksal/cli` image customization via [Dockerfile](.docksal/services/cli/Dockerfile)
+- Example of stock `docksal/cli` image customization via [Dockerfile](.docksal/services/cli/Dockerfile) to install custom node version
 - Live reload via `nodemod` 
 
 ## Prerequisites
