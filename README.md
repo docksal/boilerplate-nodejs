@@ -20,4 +20,4 @@ cd boilerplate-nodejs
 fin init
 ```
 
-Open [http://example-nodejs.docksal](http://boilerplate-nodejs.docksal) 
+Open [http://boilerplate-nodejs.docksal](http://boilerplate-nodejs.docksal) 
