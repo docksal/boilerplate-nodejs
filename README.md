@@ -15,9 +15,9 @@ A basic "Hello world" NodeJS app example.
 ## Usage
 
 ```bash
-git clone https://github.com/docksal/example-nodejs.git
-cd example-nodejs
+git clone https://github.com/docksal/boilerplate-nodejs.git
+cd boilerplate-nodejs
 fin init
 ```
 
-Open [http://example-nodejs.docksal](http://example-nodejs.docksal) 
+Open [http://example-nodejs.docksal](http://boilerplate-nodejs.docksal) 
