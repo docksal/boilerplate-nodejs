@@ -1,5 +1,5 @@
 # Use a stock Docksal image as the base
-FROM docksal/cli:2-php7.2
+FROM docksal/cli:php8.1-3.2
 
 # nvm/node/npm are only available in the docker user context
 USER docker
@@ -9,8 +9,8 @@ RUN set -e; \
 	# Initialize the user environment (this loads nvm)
 	. $HOME/.profile; \
 	# Install the necessary nodejs version
-	nvm install 10.12.0; \
-	nvm alias default 10.12.0; \
+	nvm install 18.11.0; \
+	nvm alias default 18.11.0; \
 	# Install packages
 	npm install -g nodemon;
 
